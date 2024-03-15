@@ -16,10 +16,10 @@ public class Main {
     }
 
     private static void analizator(int a, int b, int c) {
-        if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2))
-            System.out.println("\u001B[32m[a, b и c являются сторонами прямоугольного треугольника]");
-        else if (a + b <= c || b + c <= a || c + a <= b)
+        if (a + b <= c || b + c <= a || c + a <= b)
             System.out.println("\u001B[32m[a, b и c не являются сторонами треугольника]");
+        else if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2))
+            System.out.println("\u001B[32m[a, b и c являются сторонами прямоугольного треугольника]");
         else if (a == b && b == c)
             System.out.println("\u001B[32m[a, b и c являются сторонами равностороннего треугольника]");
         else if (a == b || b == c || c == a)
