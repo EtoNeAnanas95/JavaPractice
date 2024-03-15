@@ -1,4 +1,5 @@
 package org.example;
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,14 +12,18 @@ public class Main {
         System.out.println("\u001B[36m Введите число: \u001B[0m");
         int c = sc.nextInt();
 
-        analization(a, b, c);
+        analizator(a, b, c);
     }
 
-    public static void analization(int a, int b, int c) {
-        if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) System.out.println("\u001B[32m[a, b и c являются сторонами прямоугольного треугольника]");
-        else if (a == b || b == c || c == a) System.out.println("\u001B[32m[a, b и c являются сторонами равнобедренного треугольника]");
-        else if (a == b && b == c) System.out.println("\u001B[32m[a, b и c являются сторонами равностороннего треугольника]");
-        else if (a + b <= c || b + c <= a || c + a <= b) System.out.println("\u001B[32m[a, b и c не являются сторонами треугольника]");
+    private static void analizator(int a, int b, int c) {
+        if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2))
+            System.out.println("\u001B[32m[a, b и c являются сторонами прямоугольного треугольника]");
+        else if (a + b <= c || b + c <= a || c + a <= b)
+            System.out.println("\u001B[32m[a, b и c не являются сторонами треугольника]");
+        else if (a == b && b == c)
+            System.out.println("\u001B[32m[a, b и c являются сторонами равностороннего треугольника]");
+        else if (a == b || b == c || c == a)
+            System.out.println("\u001B[32m[a, b и c являются сторонами равнобедренного треугольника]");
         else System.out.println("\u001B[32m[a, b и c являются сторонами обычного треугольника]");
     }
 }
