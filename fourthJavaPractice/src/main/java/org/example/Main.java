@@ -29,13 +29,10 @@ public class Main {
             _sc.nextLine();
             System.out.println(ANSI_YELLOW + "Введите количество часов к покупке: " + ANSI_RESET);
             String countItem = _sc.nextLine();
-            //_sc.nextLine();
             System.out.println(ANSI_YELLOW + "Введите ФИО: " + ANSI_RESET);
             String fullName = _sc.nextLine();
-            //_sc.nextLine();
             System.out.println(ANSI_YELLOW + "Введите email: " + ANSI_RESET);
             String email = _sc.nextLine();
-            //_sc.nextLine();
             System.out.println(ANSI_YELLOW + "Введите номер телефона: " + ANSI_RESET);
             String phoneNumber = _sc.nextLine();
             System.out.println(ANSI_CLEAR_CONSOLE);
