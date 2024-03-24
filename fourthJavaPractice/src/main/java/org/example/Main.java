@@ -3,11 +3,11 @@ package org.example;
 import java.util.*;
 
 public class Main {
-    private static Scanner _sc = new Scanner(System.in);
+    public static final String ANSI_CLEAR_CONSOLE = "\033[H\033[2J";
     public static final String ANSI_YELLOW = "\u001B[33m";
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_GREEN = "\u001B[32m";
-    public static final String ANSI_CLEAR_CONSOLE = "\033[H\033[2J";
+    private static Scanner _sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         ArrayList<String[]> OrdersColumns = new ArrayList<>();
